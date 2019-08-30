@@ -1,0 +1,35 @@
+<!--
+ * @Description: In User Settings Edit
+ * @Author: your name
+ * @Date: 2019-08-30 10:50:33
+ * @LastEditTime: 2019-08-30 10:59:01
+ * @LastEditors: Please set LastEditors
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var type = 'images';
+        var size = {width: 800, height: 600};
+        var format = ['jpg', 'png'];
+
+        function change(type, size, format){
+            type = 'video';
+            size = {width: 1024, height: 768};
+            format.push('map');
+        }
+
+        change(type, size, format);
+
+        console.log('type:',type);
+        console.log('size',size)
+        console.log('format',format)
+    </script>
+</body>
+</html>
