@@ -1,0 +1,55 @@
+<!--
+ * @Description: In User Settings Edit
+ * @Author: your name
+ * @Date: 2019-09-02 09:38:52
+ * @LastEditTime: 2019-09-02 10:36:27
+ * @LastEditors: Please set LastEditors
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //    function howMany(...args){
+    //        console.log('args:',args)
+    //        console.log('is',Array.isArray(args))
+    //        console.log('length',args.length)
+    //    }
+    //    howMany(1,2)
+
+    // function showArgs(){
+    //     var args = [].slice.call(arguments)
+    //     return args;
+    // }
+    // console.log(showArgs(1,2,3))
+
+    function foo(a,b,c){
+        return a+b+c;
+    }
+
+    function curry(fn){
+        return function curried(){
+            var args = [].slice.call(arguments)
+            return args.length>=fn.length?
+            fn.apply(null,args):
+            function(){
+                var rest = [].slice.call(arguments)
+                return curried.apply(null,args.concat(rest))
+            }
+
+        }
+    }
+
+    var curriedFoo = curry(foo)
+    curriedFoo(1,2,3)
+    curriedFoo(1)(2,3)
+    curriedFoo(1)(2)(3)
+    curriedFoo(1,2)(3)
+    </script>
+</body>
+</html>
