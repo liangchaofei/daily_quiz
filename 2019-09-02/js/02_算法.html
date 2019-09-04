@@ -1,0 +1,32 @@
+<!--
+ * @Description: In User Settings Edit
+ * @Author: your name
+ * @Date: 2019-09-04 10:02:35
+ * @LastEditTime: 2019-09-04 10:23:26
+ * @LastEditors: Please set LastEditors
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        在一个字符串数组中有红、黄、蓝三种颜色的球，且个数不相等、顺序不一致，请为该数组排序。使得排序后数组中球的顺序为:黄、红、蓝
+        <br>
+        例如：红蓝蓝黄红黄蓝红红黄红，排序后为：黄黄黄红红红红红蓝蓝蓝。
+        <script>
+            let str = 'abbcabcaaca'
+            let arr = str.split('')
+            let obj = {
+                a:0,
+                b:1,
+                c:2
+            }
+            arr.sort((prev,curr) => obj[prev]-obj[curr])
+            console.log(arr.join('')) //aaaaabbbccc
+        </script>
+</body>
+</html>
