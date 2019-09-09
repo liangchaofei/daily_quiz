@@ -2,7 +2,7 @@
  * @Description: In User Settings Edit
  * @Author: your name
  * @Date: 2019-09-09 09:47:36
- * @LastEditTime: 2019-09-09 11:43:32
+ * @LastEditTime: 2019-09-09 11:45:20
  * @LastEditors: Please set LastEditors
  -->
 ### filter
@@ -160,3 +160,5 @@
     let arr2 = arr.every1(item => item>1)
     console.log(arr2) //false
 ```
+
+[代码实现](https://github.com/liangchaofei/daily_quiz/blob/master/2019-09-06/02_%E8%87%AA%E5%B7%B1%E5%AE%9E%E7%8E%B0%E6%95%B0%E7%BB%84%E7%9A%84%20%60map%60%E3%80%81%60filter%60%E3%80%81%60find%60%20%E6%96%B9%E6%B3%95.js)
