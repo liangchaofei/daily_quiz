@@ -1,0 +1,35 @@
+<!--
+ * @Description: In User Settings Edit
+ * @Author: your name
+ * @Date: 2019-09-10 10:31:59
+ * @LastEditTime: 2019-09-10 16:21:20
+ * @LastEditors: Please set LastEditors
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id='div' onclick='alert("div");'>
+        <ul onclick='alert("ul");'>
+        <li onclick='alert("li");'>test</li>
+        </ul>
+        </div>
+
+        <a href="http://caibaojian.com/" id="testA" >caibaojian.com</a>
+        <script>
+            var a = document.getElementById("testA");
+a.onclick =function(e){
+if(e.preventDefault){
+e.preventDefault();
+}else{
+window.event.returnValue == false;
+}
+}
+        </script>
+</body>
+</html>
