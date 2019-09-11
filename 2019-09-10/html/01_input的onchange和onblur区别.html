@@ -1,0 +1,33 @@
+<!--
+ * @Description: In User Settings Edit
+ * @Author: your name
+ * @Date: 2019-09-11 11:37:48
+ * @LastEditTime: 2019-09-11 14:43:54
+ * @LastEditors: Please set LastEditors
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- onchange 是当input内容发生改变且失去焦点
+        onblur 是失去焦点就会触发 -->
+    <input type="text" id="a" placeholder="onchange" onchange="onfun()">
+    <input type="text" id="b" placeholder="onblur" onblur="onblu()">
+    <script>
+        function onfun() {
+            console.log('123')
+        }
+        function onblu() {
+            console.log('456')
+        }
+    </script>
+</body>
+
+</html>
